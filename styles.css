@@ -1,0 +1,145 @@
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in animation for the body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Styling for the main heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease-out;
+}
+
+/* Slide-down animation for the heading */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Styling for the form container */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    animation: grow 0.8s ease-in-out;
+}
+
+/* Grow animation for the form */
+@keyframes grow {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Label styling */
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+    animation: fadeIn 1.5s ease-in;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Label hover effect */
+label:hover {
+    color: #4CAF50;
+    font-weight: bolder;
+}
+
+/* Input fields and select dropdown styling */
+input, select {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Input fields hover effect */
+input:hover, select:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    font-weight: bolder;
+}
+
+/* Input fields focus effects */
+input:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Chart container styling */
+#chart-container {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Chart image styling with scale-in animation */
+#chart {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: scaleIn 1s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Scale-in animation for the chart image */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Chart image hover effect */
+#chart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

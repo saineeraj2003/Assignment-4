@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Chart Generator</h1>
+    <form id="chart-form">
+        <label for="data-source">Select Data Source:</label>
+        <select id="data-source">
+            <option value="books">Books</option>
+            <option value="animals">Animals</option>
+            <option value="phones">Phones</option>
+            <option value="laptops">Laptops</option>
+            <option value="manual">Manual Input</option>
+        </select>
+
+        <div id="manual-input" style="display: none;">
+            <label for="chart-data">Chart Data (comma-separated):</label>
+            <input type="text" id="chart-data" placeholder="e.g., 10, 20, 30" required>
+        </div>
+
+        <label for="chart-type">Chart Type:</label>
+        <select id="chart-type">
+            <option value="line">Line</option>
+            <option value="bar">Bar</option>
+            <option value="pie">Pie</option>
+        </select>
+    </form>
+    <div id="chart-container">
+        <img id="chart" src="" alt="Chart will appear here">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
